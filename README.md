@@ -1,5 +1,5 @@
 # VerifyCrypto - CS50X Project - Jonathan Lefebvre
-#### Video Demo:  https://vimeo.com/661528757
+#### Video Demo:  https://youtu.be/8dOd4wGuZmw
 #### Description:
 
 Preface:
