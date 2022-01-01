@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VerifyCrypto.org - Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ url_for('static', filename='font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='clean-blog.min.css') }}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: white;">
+      <div class="container">
+        <img class="navbar-brand" src="https://www.verifycrypto.org/wp-content/uploads/2021/12/dark-blue.png" alt="VerifyCrypto.org" width="300px">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="{{ url_for('index') }}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: black;" href="{{ url_for('about') }}">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='home-bg.jpg') }}')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Before you buy, verify.</h1>
+              <span class="subheading">With over $12 Billion in Cryptocurrency scams in 2021, protect your investment by searching the VerifyCrypto database.</span>
+              <form action="https://verifycrypto.herokuapp.com/post/4" class="input-group mb-3" style="padding-top: 40px;">
+                <input type="search" name="searched" class="form-control" placeholder="Search Database..." autocomplete="off" aria-label="Search" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" style="background-color: #0A5D8E; color: white;" type="submit">Search</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+              <h2 class="post-title">
+                How it works
+              </h2>
+              <!-- <h3 class="post-subtitle">
+                Explainer Text
+              </h3> -->
+            </a>
+            <p class="post-meta">We've developed a database of good (and not-so-good) crypto services and providers. With VerifyCrypto, you'll know if the company you're about to do business with is legitimate.</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p class="copyright text-muted">&copy; 2022 VerifyCrypto.org</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='clean-blog.min.js') }}"></script>
+
+  </body>
+
+</html>
